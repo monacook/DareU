@@ -12,6 +12,10 @@
 		0926C8781E6251A70045896F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0926C8761E6251A70045896F /* Main.storyboard */; };
 		0926C87A1E6251A70045896F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0926C8791E6251A70045896F /* Assets.xcassets */; };
 		0926C87D1E6251A70045896F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0926C87B1E6251A70045896F /* LaunchScreen.storyboard */; };
+		0991C5811E625C7A00257CCE /* DareDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0991C5801E625C7A00257CCE /* DareDetail.storyboard */; };
+		0991C5841E625D0900257CCE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0991C5831E625D0900257CCE /* Profile.storyboard */; };
+		0991C5861E625EAD00257CCE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0991C5851E625EAD00257CCE /* ProfileViewController.swift */; };
+		0991C5881E625ED400257CCE /* DareDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0991C5871E625ED400257CCE /* DareDetailViewController.swift */; };
 		375202435670D1B5DD2D5831 /* Pods_DareU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EF6306DD5C5328D164D688 /* Pods_DareU.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +28,10 @@
 		0926C8791E6251A70045896F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0926C87C1E6251A70045896F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0926C87E1E6251A70045896F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0991C5801E625C7A00257CCE /* DareDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DareDetail.storyboard; sourceTree = "<group>"; };
+		0991C5831E625D0900257CCE /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		0991C5851E625EAD00257CCE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0991C5871E625ED400257CCE /* DareDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DareDetailViewController.swift; sourceTree = "<group>"; };
 		17EF6306DD5C5328D164D688 /* Pods_DareU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DareU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1E0207A34C0561C16AF91C /* Pods-DareU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DareU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DareU/Pods-DareU.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +69,8 @@
 		0926C8711E6251A70045896F /* DareU */ = {
 			isa = PBXGroup;
 			children = (
+				0991C5821E625CF100257CCE /* Profile Screen */,
+				0991C57F1E625C4D00257CCE /* Dare Detail Screen */,
 				0926C8721E6251A70045896F /* AppDelegate.swift */,
 				0926C8741E6251A70045896F /* ViewController.swift */,
 				0926C8761E6251A70045896F /* Main.storyboard */,
@@ -69,6 +79,24 @@
 				0926C87E1E6251A70045896F /* Info.plist */,
 			);
 			path = DareU;
+			sourceTree = "<group>";
+		};
+		0991C57F1E625C4D00257CCE /* Dare Detail Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0991C5801E625C7A00257CCE /* DareDetail.storyboard */,
+				0991C5871E625ED400257CCE /* DareDetailViewController.swift */,
+			);
+			name = "Dare Detail Screen";
+			sourceTree = "<group>";
+		};
+		0991C5821E625CF100257CCE /* Profile Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0991C5831E625D0900257CCE /* Profile.storyboard */,
+				0991C5851E625EAD00257CCE /* ProfileViewController.swift */,
+			);
+			name = "Profile Screen";
 			sourceTree = "<group>";
 		};
 		156840B0231859851E6FB2E9 /* Pods */ = {
@@ -152,7 +180,9 @@
 			files = (
 				0926C87D1E6251A70045896F /* LaunchScreen.storyboard in Resources */,
 				0926C87A1E6251A70045896F /* Assets.xcassets in Resources */,
+				0991C5841E625D0900257CCE /* Profile.storyboard in Resources */,
 				0926C8781E6251A70045896F /* Main.storyboard in Resources */,
+				0991C5811E625C7A00257CCE /* DareDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0991C5861E625EAD00257CCE /* ProfileViewController.swift in Sources */,
 				0926C8751E6251A70045896F /* ViewController.swift in Sources */,
 				0926C8731E6251A70045896F /* AppDelegate.swift in Sources */,
+				0991C5881E625ED400257CCE /* DareDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +408,7 @@
 				0926C8831E6251A70045896F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,6 @@
+framework module Pods_DareU {
+  umbrella header "Pods-DareU-umbrella.h"
+
+  export *
+  module * { export * }
+}
